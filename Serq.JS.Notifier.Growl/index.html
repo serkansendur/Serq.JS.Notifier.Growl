@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="growl_js/notifier.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnError").click(function () {
+                Notifier.error("Error");
+            });
+            $("#btnSuccess").click(function () {
+                Notifier.success("Success");
+            });
+            $("#btnWarning").click(function () {
+                Notifier.warning("Warning");
+            });
+            $("#btnInfo").click(function () {
+                Notifier.info("Info");
+            });
+        });
+       
+    </script>
+</head>
+<body>
+    <button id="btnError">Error</button>
+    <button id="btnSuccess">Success</button>
+    <button id="btnWarning">Warning</button>
+    <button id="btnInfo">Info</button>
+</body>
+</html>
